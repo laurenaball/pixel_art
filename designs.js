@@ -12,9 +12,9 @@ form.addEventListener('submit', makeGrid);
 function makeGrid() {
   var table = document.createElement('table')
   for (var i = 0; i<columns; i++){
-    table.insertRow();
+    var row = table.insertRow();
     for (var j = 0; j<rows; j++){
-      var cell = celltable.insertcell();
+      var cell = row.insertCell();
       cell.addEventListener('click', colorSquare(cell))
     }
   }
