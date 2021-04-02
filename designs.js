@@ -16,10 +16,11 @@ form.addEventListener('submit', function(event){
 });
 
 // Use input values to create rows for the heights and add width number
-// of cells to each row. Adds event listener to each cell to color when 
+// of cells to each row. Adds event listener to each cell to color when
 // clicked
 function makeGrid(height, width) {
   var table = document.getElementById('pixelCanvas');
+  table.innerHTML="";
   for (var i = 0; i<height; i++){
     var row = table.insertRow();
     for (var j = 0; j<width; j++){
